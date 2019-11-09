@@ -1,5 +1,7 @@
 {
   "name": "scroll",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
