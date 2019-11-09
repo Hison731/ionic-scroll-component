@@ -1,8 +1,6 @@
 <ion-content
         [scrollEvents]="true"
-        (ionScrollStart)="logScrollStart()"
-        (ionScroll)="logScrolling($event)"
-        (ionScrollEnd)="logScrollEnd()">
+        (ionScroll)="logScrolling($event)">
     <div class="scroll-to-top" (click)="scrolltotop()" *ngIf="showtop">
         <p>
             <ion-icon name="arrow-up"></ion-icon>

@@ -5,11 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
-import {ComponentsModule} from '../components/components.module';
+import {ComponentsModule} from '../components/components.module';  // import ComponentsModule
 
 @NgModule({
   imports: [
-    ComponentsModule,
+    ComponentsModule,  // import ComponentsModule
     CommonModule,
     FormsModule,
     IonicModule,

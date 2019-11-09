@@ -21,33 +21,25 @@ export class ListscrollComponent implements OnInit {
     }
 
     async scrolltotop() {
-      const scrollElement = await this.content.getScrollElement();
-      const scrolltop = scrollElement.scrollTop;
-      this.content.scrollToPoint(0, scrolltop - 300, 1000);
+      const scrollElement = await this.content.getScrollElement();   // get the scrollelement
+      const scrolltop = scrollElement.scrollTop;  // get scroll position
+      this.content.scrollToPoint(0, scrolltop - 300, 500);   // move scroll 300 to top. 0.5s
     }
 
     async scrolltobottom() {
-        const scrollElement = await this.content.getScrollElement();
-        const scrolltop = scrollElement.scrollTop;
-        this.content.scrollToPoint(0, scrolltop + 300, 1000);
-    }
-
-    logScrollStart() {
-        console.log('logScrollStart : When Scroll Starts');
+        const scrollElement = await this.content.getScrollElement();  // get the scrollelement
+        const scrolltop = scrollElement.scrollTop;  // get scroll position
+        this.content.scrollToPoint(0, scrolltop + 300, 500); // move scroll 300 to bottom. 0.5s
     }
 
     async logScrolling($event) {
-        const scrollElement = await this.content.getScrollElement();
-        const scrollheight = scrollElement.scrollHeight - scrollElement.clientHeight;
+        const scrollElement = await this.content.getScrollElement();   // get the scrollelement
+        const scrollheight = scrollElement.scrollHeight - scrollElement.clientHeight;   // get scroll height of scroll element
 
-        const scrolltop = $event.detail.scrollTop;
-        this.showtop = scrolltop > 50;
+        const scrolltop = $event.detail.scrollTop;   // get scroll position
+        this.showtop = scrolltop > 50;   // hide "scroll to bottom" button if the scroll is moved to very top.
 
-        this.showbottom = scrollheight - scrolltop >= 50;
-    }
-
-    logScrollEnd() {
-        console.log('logScrollEnd : When Scroll Ends');
+        this.showbottom = scrollheight - scrolltop >= 50;    // hide "scroll to top" button if the scroll is moved to very bottom.
     }
 
 }
