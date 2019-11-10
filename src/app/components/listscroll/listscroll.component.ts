@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, Input, OnInit, ViewChild} from '@angular/core';
 import {IonContent} from '@ionic/angular';
 
 
@@ -11,6 +11,7 @@ import {IonContent} from '@ionic/angular';
 export class ListscrollComponent implements OnInit {
     // @ts-ignore
     @ViewChild(IonContent) content: IonContent;
+    @Input() list: string;
     showtop = false;
     showbottom = true;
 

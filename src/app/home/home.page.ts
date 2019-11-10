@@ -1,12 +1,168 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+    selector: 'app-home',
+    templateUrl: 'home.page.html',
+    styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+    datalist: any = [];
 
-  constructor() {}
+    constructor() {
+        this.datalist = [
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            },
+            {
+                title: 'item1',
+                note: 'note1'
+            }
+        ];
+    }
 
 }
